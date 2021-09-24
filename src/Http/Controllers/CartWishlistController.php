@@ -13,4 +13,10 @@ class CartWishlistController extends Controller
         $this->cartWishlistRepo = $cartWishlistInterface;
     }
 
+    public function example()
+    {
+        $user_id = 1; //Suppose
+        $this->cartWishlistRepo->getUserCart($user_id);
+    }
+
 }
