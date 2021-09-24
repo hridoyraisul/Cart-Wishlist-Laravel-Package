@@ -31,21 +31,26 @@ Done !!! Let's have some fun now 😉
 
 ## Usage
 
-#### Firstly, declare interface in controller through constructor function
+#### Firstly, add the line below to your controller
 ```
-protected $cartWishlistRepo;
+use RaisulHridoy\CartWishList\Http\Interfaces\CartWishlistInterface;
+```
+
+#### Secondly, declare interface in controller through constructor function
+```
+protected $cartWishlist;
 public function __construct(CartWishlistInterface $cartWishlistInterface)
 {
-    $this->cartWishlistRepo = $cartWishlistInterface;
+    $this->cartWishlist = $cartWishlistInterface;
 }
 ```
 
-#### Secondly, call interfaces predefined method in controller with require parameter
+#### Trirdly, call interfaces predefined method in controller with require parameter
 ```
 public function example()
 {
     $user_id = 1; //as example
-    $this->cartWishlistRepo->getUserCart($user_id);
+    $this->cartWishlist->getUserCart($user_id);
 }
 ```
 
