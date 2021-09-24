@@ -52,7 +52,7 @@ public function example()
 ---------------------------------------------------
 
 ## Methods Overview
-######1. storeItemToCart($item)
+####1. storeItemToCart($item)  
 Here the parameter "$item" is an array which includes attributes like below,
 ```
 $item = [
@@ -65,7 +65,7 @@ $item = [
 ```
 
 
-######2. updateItemToCart($cart_id, $item)
+####2. updateItemToCart($cart_id, $item)  
 Here the 1st parameter "$cart_id" is an integer value of specific cart's id to update and the 2nd parameter "$item" is an array which includes attributes like below,
 ```
 $item = [
@@ -74,22 +74,22 @@ $item = [
      'total_price'=> 600    //Nullable Field
 ];
 ```
-######3. getCart($cart_id)
+####3. getCart($cart_id)  
 Here parameter "$cart_id" is an integer value of specific cart's id to retrieve.
 
-######4. getUserCart($user_id)
+####4. getUserCart($user_id)  
 This function require user's id as parameter and retrieve all cart items for specific user.
 
-######5. getAllCartItems()
+####5. getAllCartItems()  
 This function retrieve all cart items on the project.
 
-######6. deleteCart($cart_id)
+####6. deleteCart($cart_id)  
 This function will delete specific cart item for a user. It requires cart's id as parameter.
 
-######7. clearUserCart($user_id)
+####7. clearUserCart($user_id)  
 This function will delete all cart items for a user. It requires user's id as parameter.
 
-######8. storeItemToWishList($item)
+####8. storeItemToWishList($item)  
 Here the parameter "$item" is an array which includes attributes like below,
 ```
 $item = [
@@ -97,13 +97,13 @@ $item = [
     'user_id'    => 2
 ];
 ```
-######9. getUserWishList($user_id)
+####9. getUserWishList($user_id)  
 This function require user's id as parameter and retrieve all wishlist items for specific user.
 
-######10. deleteItemFromWishlist($wishlist_id)
+####10. deleteItemFromWishlist($wishlist_id)  
 This function will delete specific wishlist item for a user. It requires wishlist's id as parameter.
 
-######11. clearUserWishlist($user_id)
+####11. clearUserWishlist($user_id)  
 This function will delete all wishlist items for a user. It requires user's id as parameter.
 
 
