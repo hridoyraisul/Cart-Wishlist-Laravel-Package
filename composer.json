@@ -1,0 +1,19 @@
+{
+    "name": "hridoyraisul/cartwishlistlaravel",
+    "description": "This package provide basic \"add to cart\" and \"add to wishlist\" functionalities for building e-commerce project with Laravel framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raisul Hridoy",
+            "email": "raisulhridoy@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "RaisulHridoy\\CartWishList\\": "src/"
+        }
+    }
+}
